@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mauricio Henriques">
+  <title>Formulario de Mauricio Henriques</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/body.css" />
+  <link rel="stylesheet" type="text/css" href="css/formulario.css" />
+  <link rel="stylesheet" type="text/css" href="css/mediaQueries.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://resuelvetudeuda.com/es-es/wp-content/themes/rtd-2021/favicon/favicon-32x32.png">
+</head>
+<header>
+</header>
+<body>
+  <div id="titlePresentation">
+    <div class="logo"> <img
+        src="https://resuelvetudeuda.com/es-es/wp-content/themes/rtd-2021/img/logo_resuelvetudeuda.svg" width="320"
+        height="74" alt="Logo Resuelve Tu Deuda"></div>
+    <h2 id="h2title">¡Confia en nosotros!</h2>
+    <h3 id="h3subTitle">y hagamos realidad una nueva vida financiera</h3>
+  </div>
+  <main class="bg">
+    <section id="container2Col">
+      <div id="responsiveForm">
+        <a id="showForm" class="ripple-blue">Empezar ya</a>
+      </div>
+      <div id="formRegister">
+        <form id="formData" name="myForm">
+          <div id="phase1">
+            <div id="phaseTrack">
+              <div id="connectingSpots">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active form-1-tab" id="form-1-tab">
+                      <span class="phase-circle">1</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link form-2-tab" id="form-2-tab">
+                      <span class="phase-circle">2</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="formularioBody1">
+              <div id="selectDropdown">
+                <select id="tipo-entidad">
+                  <option value="bancos">Bancos</option>
+                  <option value="financieras">Financieras</option>
+                </select>
+
+                <select id="entidades">
+                  <option value="default">Selecciona una opción</option>
+                </select>
+              </div>
+              <div id="slider-container">
+                <a id="menosButton" href="#">-</a>
+                <input id="slider" type="range" min="4000" max="250000" value="4000" step="1000" name="sliderDebt">
+                <a id="masButton" href="#">+</a>
+                <div id="slider-value"></div>
+              </div>
+            </div>
+            <div class="navBtnForm">
+              <a id="continueBtn" class="ripple-blue">Continuar</a>
+            </div>
+          </div>
+          <div id="phase2">
+            <div id="phaseTrack">
+              <div id="connectingSpots">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link form-2-tab" id="form-3-tab">
+                      <span class="phase-circle">1</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active form-2-tab" id="form-4-tab">
+                      <span class="phase-circle">2</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="formularioBody2">
+              <div id="formularioNombres">
+                <p id="formFirstName" class="formInputs">
+                  <input type="text" id="nombre" class="formInputsBody2" name="nombre" placeholder="Nombres" required>
+                </p>
+                <p id="formLastName" class="formInputs">
+                  <input type="text" id="apellidos" class="formInputsBody2" name="apellidos" placeholder="Apellidos"
+                    required>
+                </p>
+              </div>
+              <p id="formNumber" class="formInputs">
+                <input type="tel" id="telefono" class="formInputsBody2" name="telefono"
+                  placeholder="Teléfono de 9 digitos (623556789)" required>
+              </p>
+              <p id="formEmail" class="formInputs">
+                <input type="email" id="correo" class="formInputsBody2" name="correo" placeholder="Correo Electrónico"
+                  required>
+              </p>
+              <div class="navBtnForm">
+                <a id="backBtn" class="ripple-blue">Atrás</a>
+                <input type="submit" class="ripple-blue" id="enviarFormulario">
+              </div>
+            </div>
+          </div>
+      </div>
+      </form>
+      </div>
+      <div id="popup" class="animate__animated popup">
+        <div class="popup-content">
+          <span class="close-button">&times;</span>
+          <div class="logo"> <img
+              src="https://resuelvetudeuda.com/es-es/wp-content/themes/rtd-2021/img/logo_resuelvetudeuda.svg"
+              width="180" height="47" alt="Logo Resuelve Tu Deuda"></div>
+          <h1 id="h1TitlePopUp">¡Gracias por contactarnos!</h1>
+          <h2>Responderemos tu mensaje en breve.</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+    <script>
+      localStorage.clear()
+    </script>
+
+    <script src="js/form.js"></script>
+
+  </footer>
+</body>
+
+</html>

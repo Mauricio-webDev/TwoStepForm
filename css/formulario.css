@@ -1,0 +1,306 @@
+/*CSS del Formulario*/
+
+#formRegister {
+  background: rgba(243, 247, 251, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9px);
+-webkit-backdrop-filter: blur(9px);
+border: 1px solid rgba(243, 247, 251, 0.14);
+flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  padding:2%;
+}
+
+#formData {
+  width: 90%;
+}
+
+#phaseTrack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+  padding: 40px;
+  border-bottom: 5px solid #f3f7fb;
+}
+
+#connectingSpots {
+  width: 12.5vw;
+  height: 2px;
+  background-color: #f3f7fb;
+  position: absolute;
+}
+
+
+.nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  list-style: none;
+  text-align: center;
+  margin-top: -7%;
+  padding: 0;
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #f3f7fb;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #fff;
+}
+
+#phase2 {
+  display:none;
+  flex-basis: 50%;
+}
+
+.phase-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#formularioBody1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#selectDropdown {
+  display: flex;
+  width: 80%;
+  margin-bottom: 5%;
+  justify-content: space-evenly;
+}
+
+/****/
+
+#tipo-entidad,
+#entidades {
+  /* Reseteo */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font-family: Roboto, sans-serif;
+  /* Personalización */
+  width: 15em;
+  height: 3em;
+  padding: 1em;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#tipo-entidad option,
+#entidades option {
+  color: white;
+  background-color: #007bff;
+}
+
+#tipo-entidad:focus,
+#entidades:focus {
+  outline: none;
+}
+
+#tipo-entidad::-ms-expand,
+#entidades::-ms-expand {
+  display: none;
+}
+
+#slider-container {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#slider-container a {
+  font-family: Roboto, sans-serif;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f3f7fb;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #f3f7fb;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+}
+
+#slider-container input {
+  flex-grow: 1;
+  margin: 0 16px;
+  background: #ddd;
+  border-radius: 8px;
+  height: 8px;
+}
+
+#slider input[type=range]::-webkit-slider-thumb {
+  background-color: #ff0000;
+}
+
+
+#slider-container::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background-color: #333;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#slider-container::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background-color: #333;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#slider-value {
+  font-family: Roboto, sans-serif;
+  flex-basis: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f3f7fb;
+  text-align: center;
+}
+
+.ripple-blue {
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+  letter-spacing: -0.5px;
+  font-size: 16pt;
+  padding: 16px;
+  cursor: pointer;
+  background-color: #004377;
+  color: white;
+}
+
+.ripple-blue:focus {
+  outline: none
+}
+
+/***/
+
+#formularioBody2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.formInputsBody2 {
+  color: #212529;
+  background-color: #eaeaea;
+  font-weight: 400;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  letter-spacing: .05em;
+  padding: 18px 32px;
+  border: 1px solid #f0f0f0;
+}
+
+.formInputs {
+  display: flex;
+  justify-content: center;
+}
+
+#formFirstName {
+  flex-basis: 50%;
+}
+
+#formLastName {
+  flex-basis: 50%;
+}
+
+#formNumber {
+  flex-basis: 100%;
+}
+
+#formEmail {
+  flex-basis: 100%;
+}
+
+#formNumber input {
+  width: 70%;
+}
+
+#formEmail input {
+  width: 60%;
+}
+
+.formInputsBody2.valid {
+  background-color: #c9f3e3;
+}
+
+.formInputsBody2.invalid {
+  background-color: #f7d6d6;
+}
+
+.navBtnForm {
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
+  justify-content: space-evenly;
+}
+
+#formularioNombres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.formInputs{
+  width:100%;
+}
+
+
+#formRegister.animate {
+  display: flex;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
